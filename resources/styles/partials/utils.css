@@ -1,0 +1,5 @@
+/* outline work in progress */
+.dummy,
+.dummy * {
+  outline: 1px dashed #ff00007a;
+}

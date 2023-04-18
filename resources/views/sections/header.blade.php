@@ -1,8 +1,8 @@
-<header class="banner absolute top-0 left-0 right-0 z-50">
+<header class="banner dummy">
   <div class="container content-center flex items-center justify-between md:py-2 mx-auto px-4 py-4 relative">
 
     <a class="brand" href="{{ home_url('/') }}" class="flex-1">
-      <img src="@asset('images/logo.svg')" alt="logo" class="md:mx-0 mx-auto">
+      <img src="@asset('images/logo.svg')" alt="logo" class="w-20">
     </a>
 
     @if (has_nav_menu('primary_navigation'))
