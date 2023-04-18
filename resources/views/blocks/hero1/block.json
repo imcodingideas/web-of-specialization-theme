@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sage/hero1",
+  "title": "Hero 1",
+  "description": "title, text on the left and image on the right",
+  "category": "theme",
+  "icon": "layout",
+  "keywords": [
+    "sage",
+    "hero"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "renderHero1"
+  },
+  "align": "full"
+}
