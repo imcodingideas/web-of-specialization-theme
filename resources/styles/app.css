@@ -2,5 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* global */
-@import 'global/utils.css';
-@import 'global/global.css';
+@import 'globals/utils.css';
+@import 'globals/global.css';
+/* layout */
+@import 'layout/nav-primary.css';
