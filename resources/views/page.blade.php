@@ -1,4 +1,4 @@
-@extends('layouts.wide')
+@extends('layouts.blank')
 
 @section('content')
   @while(have_posts()) @php(the_post())
