@@ -2,5 +2,5 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 /* global */
-@import 'partials/utils.css';
-@import 'partials/global.css';
+@import 'global/utils.css';
+@import 'global/global.css';
