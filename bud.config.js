@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('http://webofspecialization.com.local')
+    .setProxyUrl('http://localhost:8080')
     .watch(['resources/views', 'app']);
 
   /**
