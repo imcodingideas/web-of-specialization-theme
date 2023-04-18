@@ -12,7 +12,7 @@
   ],
   "acf": {
     "mode": "preview",
-    "renderCallback": "renderHero1"
+    "renderCallback": "sage_block_hero1"
   },
   "align": "full"
 }

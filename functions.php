@@ -57,7 +57,7 @@ if (!function_exists('\Roots\bootloader')) {
 collect([
     'setup',
     'filters',
-    'blocks',
+    'block-hero1',
 ])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {
