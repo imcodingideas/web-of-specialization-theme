@@ -7,7 +7,7 @@ add_action(
     }
 );
 
-function sage_block_header_cards()
+function sage_block_header_cards($atts)
 {
     // Repeater field
     $cards = [];
@@ -21,6 +21,7 @@ function sage_block_header_cards()
     }
 
     echo view('blocks.header-cards.view', [
+        'class' => $atts['className'] ?? '',
         'title' => get_field('title'),
         'text' => get_field('text'),
         'cards' => $cards,
