@@ -8,9 +8,10 @@ add_action(
     }
 );
 
-function sage_block_hero1()
+function sage_block_hero1($atts)
 {
     echo view('blocks.hero1.view', [
+        'class' => $atts['className'] ?? '',
         'title' => get_field('title'),
         'text' => get_field('text'),
         'link1' => get_field('link1'),
