@@ -58,6 +58,7 @@ collect([
     'setup',
     'filters',
     'block-hero1',
+    'acf',
 ])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {

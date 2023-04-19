@@ -3,7 +3,9 @@
 
     {{-- logo --}}
     <a class="brand" href="{{ home_url('/') }}" class="flex-1">
-      <img src="@asset('images/logo.svg')" alt="logo" class="w-20">
+      @if (!empty($logo_header))
+        {!! wp_get_attachment_image($logo_header['id'], 'full', false, ['class' => 'w-20']) !!}
+      @endif
     </a>
 
     {{-- menu --}}
@@ -18,9 +20,11 @@
       <div class="hidden md:block">
         <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/wp-admin">Sign in</a>
       </div>
-      <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="/">
-        <span>Get started</span>
-      </a>
+      @if ($cta_header)
+        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="{!! $cta_header['url'] !!}" target="{!! $cta_header['target'] !!}">
+          {{ $cta_header['title'] }}
+        </a>
+      @endif
       <div class="-mr-1 md:hidden">
         <div data-headlessui-state="">
           <button class="relative z-10 flex h-8 w-8 items-center justify-center [&amp;:not(:focus-visible)]:focus:outline-none" aria-label="Toggle Navigation" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:R3p6:">
