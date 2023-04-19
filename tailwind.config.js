@@ -2,7 +2,12 @@
 import forms from '@tailwindcss/forms';
 
 const config = {
-  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
+  content: [
+    './index.php',
+    './app/**/*.php',
+    './resources/**/*.{php,vue,js}',
+    './atcf7/**/*.php',
+  ],
   safelist: [
     {
       pattern: /mt-.+/,
