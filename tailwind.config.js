@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} config */
+import forms from '@tailwindcss/forms';
+
 const config = {
   content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
   safelist: [
@@ -14,7 +16,7 @@ const config = {
       colors: {}, // Extend Tailwind's default colors
     },
   },
-  plugins: [],
+  plugins: [forms],
 };
 
 export default config;
