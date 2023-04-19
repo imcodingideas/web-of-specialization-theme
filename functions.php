@@ -57,8 +57,9 @@ if (!function_exists('\Roots\bootloader')) {
 collect([
     'setup',
     'filters',
-    'block-hero1',
     'acf',
+    'block-hero1',
+    'block-header-cards',
 ])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {
