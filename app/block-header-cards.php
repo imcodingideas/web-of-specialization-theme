@@ -24,6 +24,7 @@ function sage_block_header_cards($atts)
         'class' => $atts['className'] ?? '',
         'title' => get_field('title'),
         'text' => get_field('text'),
+        'background' => get_field('background'),
         'cards' => $cards,
     ]);
 }
