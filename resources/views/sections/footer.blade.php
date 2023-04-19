@@ -4,7 +4,9 @@
   <div class="container flex flex-col gap-4 items-center py-16 mx-auto">
     {{-- logo --}}
     <a class="brand" href="{{ home_url('/') }}" class="flex-1">
-      <img src="@asset('images/logo.svg')" alt="logo" class="w-20">
+      @if (!empty($logo_footer))
+        {!! wp_get_attachment_image($logo_footer['id'], 'full', false, ['class' => 'w-20']) !!}
+      @endif
     </a>
 
     {{-- menu --}}
