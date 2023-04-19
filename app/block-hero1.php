@@ -10,7 +10,7 @@ add_action(
 
 function sage_block_hero1()
 {
-    echo view('blocks.hero1.hero1', [
+    echo view('blocks.hero1.view', [
         'title' => get_field('title'),
         'text' => get_field('text'),
         'link1' => get_field('link1'),
