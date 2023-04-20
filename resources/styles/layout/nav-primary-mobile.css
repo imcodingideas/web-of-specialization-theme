@@ -1,0 +1,16 @@
+/* layout */
+.nav-primary-mobile .nav {
+  @apply flex flex-col items-center gap-4;
+}
+/* items */
+.nav-primary-mobile .menu-item {
+  @apply px-4 py-1 text-sm;
+}
+/* links */
+.nav-primary-mobile .menu-item.current-menu-item a,
+.nav-primary-mobile .menu-item a:hover {
+  @apply text-blue-500 transition-colors duration-200;
+}
+.nav-primary-mobile .menu-item a {
+  @apply inline-block px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900
+}

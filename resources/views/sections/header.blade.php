@@ -1,3 +1,6 @@
+{{-- mobile nav --}}
+@include('sections.nav-primary-mobile')
+
 <header class="banner py-10">
   <div class="container content-center flex items-center justify-between md:py-2 mx-auto px-4 py-4 relative">
 
@@ -25,7 +28,7 @@
           {{ $cta_header['title'] }}
         </a>
       @endif
-      <div class="-mr-1 md:hidden">
+      <div id="nav-primary-mobile__open" class="-mr-1 md:hidden">
         <div data-headlessui-state="">
           <button class="relative z-10 flex h-8 w-8 items-center justify-center [&amp;:not(:focus-visible)]:focus:outline-none" aria-label="Toggle Navigation" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:R3p6:">
             <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round">
