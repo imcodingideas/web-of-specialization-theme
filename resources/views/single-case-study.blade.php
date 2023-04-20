@@ -45,7 +45,7 @@
       <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
         <div class="lg:pr-4">
           <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg prose lg:prose-lg">
-          {!! $content !!}
+            {!! $content !!}
           </div>
         </div>
       </div>
