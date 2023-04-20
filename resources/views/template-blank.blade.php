@@ -2,7 +2,7 @@
   Template Name: Blank
 --}}
 
-@extends('layouts.blank')
+@extends('layouts.app')
 
 @section('content')
   @while(have_posts()) @php(the_post())
