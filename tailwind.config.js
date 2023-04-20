@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} config */
 import forms from '@tailwindcss/forms';
+import typography from '@tailwindcss/typography';
 
 const config = {
   content: [
@@ -21,7 +22,7 @@ const config = {
       colors: {}, // Extend Tailwind's default colors
     },
   },
-  plugins: [forms],
+  plugins: [forms, typography],
 };
 
 export default config;
