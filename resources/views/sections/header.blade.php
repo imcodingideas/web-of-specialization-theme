@@ -2,7 +2,7 @@
   <div class="container content-center flex items-center justify-between md:py-2 mx-auto px-4 py-4 relative">
 
     {{-- logo --}}
-    <a class="brand" href="{{ home_url('/') }}" class="flex-1">
+    <a class="brand" href="{{ home_url('/') }}">
       @if (!empty($logo_header))
         {!! wp_get_attachment_image($logo_header['id'], 'full', false, ['class' => 'w-20']) !!}
       @endif
