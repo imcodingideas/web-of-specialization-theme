@@ -63,4 +63,9 @@ export default async (app) => {
     .useTailwindFontFamily()
     .useTailwindFontSize()
     .enable();
+
+  // allow jquery
+  app.provide({
+    jquery: ['jQuery', '$'],
+  });
 };

@@ -1,10 +1,11 @@
 import domReady from '@roots/sage/client/dom-ready';
+import navPrimary from './nav-primary.js';
 
 /**
  * Application entrypoint
  */
 domReady(async () => {
-  // ...
+  navPrimary();
 });
 
 /**
