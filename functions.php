@@ -60,6 +60,7 @@ collect([
     'acf',
     'block-hero1',
     'block-header-cards',
+    'block-contact1',
 ])
     ->each(function ($file) {
         if (!locate_template($file = "app/{$file}.php", true, true)) {
