@@ -59,6 +59,7 @@ collect([
     'filters',
     'acf',
     'block-hero1',
+    'block-hero2',
     'block-header-cards',
     'block-contact1',
     'block-cta1',
