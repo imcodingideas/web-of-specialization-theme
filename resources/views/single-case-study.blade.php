@@ -52,4 +52,11 @@
     </div>
   </div>
 
+  @include('blocks.cta1.view', [
+      'class' => 'mt-16',
+      'title' => get_field('cta_title', 'option'),
+      'text' => get_field('cta_text', 'option'),
+      'link1' => get_field('cta_link1', 'option'),
+      'link2' => get_field('cta_link2', 'option'),
+  ])
 @endsection
