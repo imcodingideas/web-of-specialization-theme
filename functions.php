@@ -63,6 +63,7 @@ collect([
     'block-header-cards',
     'block-header-statistics',
     'block-contact1',
+    'block-contact2',
     'block-cta1',
 ])
     ->each(function ($file) {

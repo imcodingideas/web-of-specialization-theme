@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "sage/contact2",
+  "title": "Contact 2",
+  "description": "Title, text contact form 7 and image",
+  "category": "theme",
+  "icon": "layout",
+  "keywords": [
+    "sage",
+    "contact"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "sage_block_contact2"
+  },
+  "align": "full"
+}
