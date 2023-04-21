@@ -61,6 +61,7 @@ collect([
     'block-hero1',
     'block-hero2',
     'block-header-cards',
+    'block-header-statistics',
     'block-contact1',
     'block-cta1',
 ])
