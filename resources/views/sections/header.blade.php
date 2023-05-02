@@ -1,7 +1,7 @@
 {{-- mobile nav --}}
 @include('sections.nav-primary-mobile')
 
-<header class="banner py-10">
+<header class="banner py-10 z-50">
   <div class="container content-center flex items-center justify-between md:py-2 mx-auto px-4 py-4 relative">
 
     {{-- logo --}}
