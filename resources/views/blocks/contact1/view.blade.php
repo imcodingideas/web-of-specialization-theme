@@ -22,7 +22,7 @@ Recommended:
     @endif
 
   </div>
-  <div class="mx-auto mt-16 max-w-xl sm:mt-20 form-contact1">
+  <div class="mx-auto mt-4 max-w-xl sm:mt-8 form-contact1">
     @if (!empty($shortcode))
       {!! do_shortcode($shortcode) !!}
     @endif

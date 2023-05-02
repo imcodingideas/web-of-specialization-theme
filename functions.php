@@ -55,6 +55,7 @@ if (!function_exists('\Roots\bootloader')) {
 */
 
 collect([
+    'alpinejs',
     'setup',
     'filters',
     'acf',

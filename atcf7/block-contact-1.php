@@ -6,50 +6,44 @@ if (!defined('ABSPATH')) {
 * Template Name: Block contact 1
 */
 ?>
-<div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-    <div>
-        <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-        <div class="mt-2.5">
-            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-        </div>
+<!-- requires alpinejs -->
+<div x-data="{ open: false }">
+    <div class="text-center">
+        <button type="button" x-show="!open" @click="open = ! open" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</button>
     </div>
-    <div>
-        <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-        <div class="mt-2.5">
-            [text* last-name]
-        </div>
-    </div>
-    <div class="sm:col-span-2">
-        <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
-        <div class="mt-2.5">
-            [text company]
-        </div>
-    </div>
-    <div class="sm:col-span-2">
-        <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-        <div class="mt-2.5">
-            [email* my-email]
-        </div>
-    </div>
-    <div class="sm:col-span-2">
-        <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number</label>
-        <div class="relative mt-2.5">
-            <div class="mt-2.5">[tel phone-number]</div>
-        </div>
-    </div>
-    <div class="sm:col-span-2">
-        <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
-        <div class="mt-2.5">
-            [textarea message class:class1 class:class2]
-        </div>
-    </div>
-    <div class="sm:col-span-2">
-        <div class="leading-6 text-gray-600 text-sm">
-            [acceptance conditions] <span class="ml-2">By selecting this, you agree to our <a href="#" class="font-semibold text-indigo-600">privacy&nbsp;policy</a>.</span> [/acceptance]
-        </div>
-    </div>
-</div>
 
-<div class="mt-10">
-    [submit class:btn-submit "Let's talk"]
+    <!-- form -->
+    <div x-show="open" @click.outside="open = false" x-transition>
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6">
+            <div>
+                <label for="my-name" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>
+                <div class="mt-2.5">
+                    [text* my-name]
+                </div>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+                <div class="mt-2.5">
+                    [email* my-email]
+                </div>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Service</label>
+                <div class="mt-2.5">
+                    [select* service "AI Classes" "Idea Exploration" "AI Implementation" "AI Customization" "Other"]
+                </div>
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">More Info</label>
+                <div class="mt-2.5">
+                    [textarea message maxlength:250]
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            [submit class:btn-submit "Let's go!"]
+        </div>
+
+    </div>
 </div>
