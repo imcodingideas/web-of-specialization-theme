@@ -34,7 +34,7 @@ export default async (app) => {
    */
   app
     .setUrl('http://localhost:3000')
-    .setProxyUrl('http://localhost:8080')
+    .setProxyUrl('http://wp.localhost')
     .watch(['resources/views', 'app']);
 
   /**
