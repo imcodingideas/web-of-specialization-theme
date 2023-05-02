@@ -1246,6 +1246,21 @@
           "name": "Rose 950",
           "slug": "rose-950",
           "color": "#4c0519"
+        },
+        {
+          "name": "Main",
+          "slug": "main",
+          "color": "#04alea"
+        },
+        {
+          "name": "Blue1",
+          "slug": "blue1",
+          "color": "#113c82"
+        },
+        {
+          "name": "Blue2",
+          "slug": "blue2",
+          "color": "#0c6cb4"
         }
       ]
     },

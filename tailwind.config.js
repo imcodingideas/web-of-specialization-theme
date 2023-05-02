@@ -19,7 +19,11 @@ const config = {
   ],
   theme: {
     extend: {
-      colors: {}, // Extend Tailwind's default colors
+      colors: {
+        main: '#04alea',
+        blue1: '#113c82',
+        blue2: '#0c6cb4',
+      }, // Extend Tailwind's default colors
     },
   },
   plugins: [forms, typography],
