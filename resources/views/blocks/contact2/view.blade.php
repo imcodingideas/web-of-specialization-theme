@@ -8,7 +8,7 @@ Recommended:
 
 - add-template-for-contact-form-7
 --}}
-<div class="form-contact2 relative bg-white {{ $class }}">
+<div id="contact" class="form-contact2 relative bg-white {{ $class }}">
   <div class="lg:absolute lg:inset-0 lg:left-1/2">
     @if (!empty($image))
       {!! wp_get_attachment_image($image['id'], 'full', false, ['class' => 'h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full']) !!}

@@ -5,7 +5,7 @@
     {{-- logo --}}
     <a class="brand" href="{{ home_url('/') }}">
       @if (!empty($logo_footer))
-        {!! wp_get_attachment_image($logo_footer['id'], 'full', false, ['class' => 'w-20']) !!}
+        {!! wp_get_attachment_image($logo_footer['id'], 'full', false, ['class' => 'h-[65px] w-auto']) !!}
       @endif
     </a>
 

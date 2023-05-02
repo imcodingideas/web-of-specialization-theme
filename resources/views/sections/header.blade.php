@@ -7,7 +7,7 @@
     {{-- logo --}}
     <a class="brand" href="{{ home_url('/') }}">
       @if (!empty($logo_header))
-        {!! wp_get_attachment_image($logo_header['id'], 'full', false, ['class' => 'w-20']) !!}
+        {!! wp_get_attachment_image($logo_header['id'], 'full', false, ['class' => 'h-[65px] w-auto']) !!}
       @endif
     </a>
 
@@ -20,12 +20,16 @@
 
     {{-- call to action --}}
     <div class="flex items-center gap-x-5 md:gap-x-8">
-      <div class="hidden md:block">
-        <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/wp-admin">Sign in</a>
-      </div>
-      @if ($cta_header)
-        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="{!! $cta_header['url'] !!}" target="{!! $cta_header['target'] !!}">
-          {{ $cta_header['title'] }}
+      @if ($cta_header1)
+        <div class="hidden md:block">
+          <a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{!! $cta_header1['url'] !!}" target="{!! $cta_header1['target'] !!}">
+            {{ $cta_header1['title'] }}
+          </a>
+        </div>
+      @endif
+      @if ($cta_header2)
+        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="{!! $cta_header2['url'] !!}" target="{!! $cta_header2['target'] !!}">
+          {{ $cta_header2['title'] }}
         </a>
       @endif
       <div id="nav-primary-mobile__open" class="-mr-1 md:hidden">

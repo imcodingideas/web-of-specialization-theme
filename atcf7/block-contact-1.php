@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
     </div>
 
     <!-- form -->
-    <div x-show="open" @click.outside="open = false" x-transition>
+    <div x-show="open" x-transition>
         <div class="grid grid-cols-1 gap-x-8 gap-y-6">
             <div>
                 <label for="my-name" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>

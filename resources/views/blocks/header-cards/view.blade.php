@@ -1,4 +1,4 @@
-<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 {{ $class }}">
+<div id="services" class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 {{ $class }}">
   @if (!empty($background))
     {!! wp_get_attachment_image($background['id'], 'full', false, ['class' => 'absolute inset-0 -z-20 h-full w-full object-cover object-right md:object-center']) !!}
     {{-- overlay --}}

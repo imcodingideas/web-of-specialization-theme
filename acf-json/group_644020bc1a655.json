@@ -71,8 +71,24 @@
         },
         {
             "key": "field_644020f0b8445",
-            "label": "CTA header",
-            "name": "cta_header",
+            "label": "CTA header 1",
+            "name": "cta_header2",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_645198ab0b2e7",
+            "label": "CTA header 2",
+            "name": "cta_header2",
             "aria-label": "",
             "type": "link",
             "instructions": "",
@@ -193,5 +209,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1682038550
+    "modified": 1683069120
 }

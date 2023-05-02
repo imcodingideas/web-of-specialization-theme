@@ -18,3 +18,7 @@ body {
 #main {
   flex-grow: 1;
 }
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

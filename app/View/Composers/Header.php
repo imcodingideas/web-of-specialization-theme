@@ -14,7 +14,8 @@ class Header extends Composer
     {
         return [
             'logo_header' => get_field('logo_header', 'option'),
-            'cta_header' => get_field('cta_header', 'option'),
+            'cta_header1' => get_field('cta_header1', 'option'),
+            'cta_header2' => get_field('cta_header2', 'option'),
         ];
     }
 }
