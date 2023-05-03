@@ -1,10 +1,10 @@
 /* layout */
 .nav-footer .nav {
-  @apply flex gap-2;
+  @apply flex gap-3 flex-col md:flex-row items-center;
 }
 /* items */
 .nav-footer .menu-item {
-  @apply px-4 py-1 text-sm;
+  @apply text-sm;
 }
 /* links */
 .nav-footer .menu-item.current-menu-item a,
