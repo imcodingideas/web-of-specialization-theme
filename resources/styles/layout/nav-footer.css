@@ -7,7 +7,7 @@
   @apply text-sm;
 }
 /* links */
-.nav-footer .menu-item.current-menu-item a,
+/* .nav-footer .menu-item.current-menu-item a, */
 .nav-footer .menu-item a:hover {
   @apply text-blue-500 transition-colors duration-200;
 }
